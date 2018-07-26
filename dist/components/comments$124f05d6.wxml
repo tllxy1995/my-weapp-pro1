@@ -1,0 +1,12 @@
+<import src="CommentList$0266c6ec" />
+<import src="Card$14228673" />
+<template name="comments$124f05d6">
+  <view class="_div data-v-2c1ffb50 container">
+    <template wx:if="{{userinfo.openId}}" type="user" data="{{...$root[$kk+'0'], $root}}" is="CommentList$0266c6ec"></template>
+    <view wx:if="{{userinfo.openId}}" class="_div data-v-2c1ffb50">
+      <view class="_div data-v-2c1ffb50 page-title">我的图书</view>
+      <template wx:key="book.id" data="{{...$root[$kk+'1-'+index], $root}}" is="Card$14228673" wx:for="{{books}}" wx:for-index="index" wx:for-item="book"></template>
+      <view wx:if="{{!books.length}}" class="_div data-v-2c1ffb50">暂时还没添加过书，快去添加几本吧</view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,34 @@
+
+.text-primary {
+  color: #ea5149;
+}
+.btn {
+  color: #fff;
+  background: #ea5149;
+  margin-bottom: 20rpx;
+  padding-left: 30rpx;
+  border-radius: 4rpx;
+  font-size: 32rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+  width: 100%;
+}
+.btn:active {
+  background: #fa5149;
+}
+.text-footer {
+  text-align: center;
+  font-size: 24rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.page-title {
+  padding-left: 40rpx;
+  padding-top: 10rpx;
+  background: #eee;
+  line-height: 40rpx;
+  font-size: 28rpx;
+}
+.right {
+  float: right;
+}

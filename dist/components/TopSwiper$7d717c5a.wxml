@@ -1,0 +1,12 @@
+<template name="TopSwiper$7d717c5a">
+  <view class="_div data-v-641f765d swiper">
+    <swiper indicator-dots="{{true}}" indicator-color="#ea5a49" autoplay="{{true}}" interval="{{6000}}" duration="{{1000}}" circular="{{true}}" class="_swiper data-v-641f765d">
+      <view wx:key="imgindex" key="{{imgindex}}" wx:for="{{imgUrls}}" wx:for-index="imgindex" wx:for-item="top" class="_div data-v-641f765d">
+        <swiper-item class="_swiper-item data-v-641f765d">
+          <image bindtap="handleProxy" class="_img data-v-641f765d slide-image" mode="aspectFit" wx:key="img.id" key="{{img.id}}" src="{{img.image}}" alt data-eventid="{{'0-'+imgindex+'-'+index}}" data-comkey="{{$k}}" wx:for="{{top}}" wx:for-index="index"
+            wx:for-item="img"></image>
+        </swiper-item>
+      </view>
+    </swiper>
+  </view>
+</template>

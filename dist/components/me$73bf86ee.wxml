@@ -1,0 +1,12 @@
+<import src="YearProgress$20fa64ed" />
+<template name="me$73bf86ee">
+  <view class="_div data-v-7cc6ad8b container">
+    <view class="_div data-v-7cc6ad8b userinfo">
+      <image src="{{userinfo.avatarUrl}}" alt class="_img data-v-7cc6ad8b"></image>
+      <view class="_p data-v-7cc6ad8b">{{userinfo.nickName}}</view>
+    </view>
+    <template data="{{...$root[$kk+'0'], $root}}" is="YearProgress$20fa64ed"></template>
+    <button wx:if="{{userinfo.openId}}" bindtap="handleProxy" class="_button data-v-7cc6ad8b btn" data-eventid="{{'1'}}" data-comkey="{{$k}}">添加图书</button>
+    <button wx:else open-type="getUserInfo" lang="zh_CN" class="_button data-v-7cc6ad8b btn" bindgetuserinfo="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">点击登录</button>
+  </view>
+</template>
